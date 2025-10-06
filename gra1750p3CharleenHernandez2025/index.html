@@ -4,19 +4,35 @@
 <meta charset="utf-8">
 <title>Pudding &aacute; la Mode | Charleen Hernandez, 2025</title>
 <style>
-body 
-	{
-	background-image: url("background.jpg");
-    margin: 0;
-}
-wrapper {
-    width: 1366px;
-    display: block;
-    margin: auto;
-	p{ @font-face
+	@font-face {
   font-family: 'Chococooky';
   src: url('Chococooky.ttf') format('truetype');
-	}
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MochiBop Demo';
+  src: url('MochiBop-Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	
+  background-image: url("background.jpg");
+  margin: 0;
+}
+	    h2{text-align:center; background: linear-gradient(to bottom, #C7412C, #4a0e05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; font-size:45px; font-family: 'MochiBop', sans-serif;}
+		p{color: #C7412C; text-align:left; font-family: 'Chococooky', sans-serif;}
+	    ul{color: #C7412C; text-align:left; font-family: 'Chococooky', sans-serif;}
+	    ol{color: #C7412C; }
+	
+}
+wrapper {
+  width: 1366px;
+  display: block;
+  margin: auto;
 }
 </style>
 </head>
@@ -27,7 +43,7 @@ wrapper {
   </header>
   <main> <img class="banner" src="pudding2.png" alt="A pudding &aacute la mode served in a silver bowl" width="600" height="422"/>
     <h2>Pudding &aacute; la Mode</h2>
-    <p style="color:#C7412C; font-family:'Chococooky', monospace;">
+    <p>
 		Pudding &aacute; la Mode is a delightful treat that combines the rich, creamy comfort of classic pudding with the sweet, chilly indulgence of ice cream. The pudding itself is luxuriously smooth and creamy, offering that warm, comforting flavor we all know and love. Add a cool scoop of ice cream on top, and you get a delightful contrast. Rich meets refreshing, warm meets chilled. Whether you dress it up with chocolate sauce, caramel drizzle, or fresh berries, this dessert is as versatile as it is satisfying. It’s a simple yet elegant treat that feels both nostalgic and special, perfect for sharing or savoring solo.</p>
     <section>
       <h3>Ingredients</h3>
@@ -50,7 +66,7 @@ wrapper {
     </section>
     <section>
       <h3>Steps</h3>
-      <ol>
+      <ol style="font-family: 'Chococooky', monospace;">
         <li>In a medium saucepan, whisk together sugar, cornstarch, and salt. Slowly add the milk and cream, whisking until smooth.</li>
         <li>Place over medium heat, stirring constantly until the mixture begins to thicken and bubble (about 5–7 minutes).</li>
         <li>In a small bowl, lightly beat the egg yolks. Slowly pour in about ½ cup of the hot mixture while whisking to avoid scrambling. Then, return the egg mixture back into the saucepan.</li>
@@ -61,8 +77,8 @@ wrapper {
     </section>
   </main>
   <footer>
-    <p>&copy; 2025, Charleen Hernandez</p>
-    <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    <p style="font-family: 'Chococooky', monospace;">&copy; 2025, Charleen Hernandez</p>
+    <p style="font-family: 'Chococooky', monospace;">This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
   </footer>
 </wrapper>
 </body>
