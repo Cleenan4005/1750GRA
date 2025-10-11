@@ -4,81 +4,174 @@
 <meta charset="utf-8">
 <title>Pudding &aacute; la Mode | Charleen Hernandez, 2025</title>
 <style>
-	@font-face {
-  font-family: 'Chococooky';
-  src: url('Chococooky.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+    font-family: 'Chococooky';
+    src: url('Chococooky.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'MochiBop Demo';
-  src: url('MochiBop-Demo.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Mochibop Demo';
+    src: url('Mochibop-Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body {
-	
-  background-image: url("background.jpg");
-  margin: 0;
-}
-	    h2{text-align:center; background: linear-gradient(to bottom, #C7412C, #4a0e05);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; font-size:45px; font-family: 'MochiBop', sans-serif;}
-		p{color: #C7412C; text-align:left; font-family: 'Chococooky', sans-serif;}
-	    ul{color: #C7412C; text-align:left; font-family: 'Chococooky', sans-serif;}
-	    ol{color: #C7412C; }
-	
+    padding: 0;
+    background-color: #734B00;
+    background-image: url("background.jpg");
+    margin: 0;
 }
 wrapper {
-  width: 1366px;
-  display: block;
-  margin: auto;
+    width: 1366px;
+    display: block;
+    margin: auto;
+    padding: 40px 40px 40px 40px;
+}
+header {
+    margin: 10px 0 30px 0;
+    text-align: center
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+h1 {
+    display: inline-block;
+    background: linear-gradient(to bottom, #C7412C, #4a0e05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: 'MochiBop', sans-serif;
+}
+h2 {
+    background: linear-gradient(to bottom, #C7412C, #4a0e05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-family: 'MochiBop', sans-serif;
+}
+.pudding {
+    border-radius: 30px;
+    display: block;
+    margin: 0px 350px;
+}
+.banner {
+    background-color: white;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 0px 10px 50px 10px;
+    border: thick dashed #580000;
+    box-sizing: border-box;
+    padding: 0px 300px 20px 10px;
+    width: 93%
+}
+h3 {
+    background: linear-gradient(to bottom, #C7412C, #4a0e05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: 'MochiBop', sans-serif;
+}
+h4 {
+    background: linear-gradient(to bottom, #C7412C, #4a0e05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-family: 'MochiBop', sans-serif;
+}
+.intro {
+    color: #C7412C;
+    text-align: center;
+    font-family: 'Chococooky', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block;
+    width: 120%;
+}
+li {
+    color: #C7412C;
+    text-align: left;
+    font-family: 'Chococooky', sans-serif;
+}
+section {
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    border: thick dashed #580000;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 30px;
+}
+.steps {
+    font-size: 23px
+}
+.ingredients {
+    font-size: 23px;
+    padding: 15px;
+}
+.foot {
+    padding: 50px;
+    display: inline-block;
 }
 </style>
 </head>
 <body>
 <wrapper>
-  <header> <img class="logo" src="baselogo2.png" alt="the logo of this website" width="300" height="300"/>
+  <header>
+    <div class="logo"> <img src="baselogo2.png" alt="the logo of this website"/> </div>
     <h1>Sugarspell</h1>
   </header>
-  <main> <img class="banner" src="pudding2.png" alt="A pudding &aacute la mode served in a silver bowl" width="600" height="422"/>
-    <h2>Pudding &aacute; la Mode</h2>
-    <p>
-		Pudding &aacute; la Mode is a delightful treat that combines the rich, creamy comfort of classic pudding with the sweet, chilly indulgence of ice cream. The pudding itself is luxuriously smooth and creamy, offering that warm, comforting flavor we all know and love. Add a cool scoop of ice cream on top, and you get a delightful contrast. Rich meets refreshing, warm meets chilled. Whether you dress it up with chocolate sauce, caramel drizzle, or fresh berries, this dessert is as versatile as it is satisfying. It’s a simple yet elegant treat that feels both nostalgic and special, perfect for sharing or savoring solo.</p>
+  <main>
+    <div class="banner">
+      <h2>Pudding &aacute; la Mode</h2>
+      <img class="pudding" src="pudding2.png" alt="A pudding &aacute la mode served in a silver bowl" height="400px" width="550px"/>
+      <div class="intro">
+        <p> Pudding &aacute; la Mode is a delightful treat that combines the rich, creamy comfort of classic pudding with the sweet, chilly indulgence of ice cream. The pudding itself is luxuriously smooth and creamy, offering that warm, comforting flavor we all know and love. Add a cool scoop of ice cream on top, and you get a delightful contrast. Rich meets refreshing, warm meets chilled. Whether you dress it up with chocolate sauce, caramel drizzle, or fresh berries, this dessert is as versatile as it is satisfying. It’s a simple yet elegant treat that feels both nostalgic and special, perfect for sharing or savoring solo.</p>
+      </div>
+    </div>
     <section>
-      <h3>Ingredients</h3>
-      <h4>For the pudding...</h4>
-      <ul>
-        <li>2 cups whole milk </li>
-        <li>2 eggs </li>
-        <li>&frac12; cup heavy cream</li>
-        <li>&frac12; cup granulated sugar</li>
-        <li>3 tbsp cornstarch</li>
-        <li>2 tbsp unsalted butter</li>
-        <li>1 tsp vanilla extract</li>
-        <li>&frac14; tsp salt</li>
-      </ul>
-      <h4>For serving (&aacute; la mode)...</h4>
-      <ul>
-        <li>1 scoop of vanilla ice cream (or your flavor of  choice)</li>
-        <li>Any toppings of your choice (chocolate or caramel syrup, whipped cream, fresh fruit, nuts, ect.)</li>
-      </ul>
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <h4>For the pudding...</h4>
+        <ul>
+          <li>2 cups whole milk </li>
+          <li>2 eggs </li>
+          <li>&frac12; cup heavy cream</li>
+          <li>&frac12; cup granulated sugar</li>
+          <li>3 tbsp cornstarch</li>
+          <li>2 tbsp unsalted butter</li>
+          <li>1 tsp vanilla extract</li>
+          <li>&frac14; tsp salt</li>
+        </ul>
+        <h4>For serving (&aacute; la mode)...</h4>
+        <ul>
+          <li>1 scoop of vanilla ice cream (or your flavor of  choice)</li>
+          <li>Any toppings of your choice (chocolate or caramel syrup, whipped cream, fresh fruit, nuts, ect.)</li>
+        </ul>
+      </div>
     </section>
     <section>
-      <h3>Steps</h3>
-      <ol style="font-family: 'Chococooky', monospace;">
-        <li>In a medium saucepan, whisk together sugar, cornstarch, and salt. Slowly add the milk and cream, whisking until smooth.</li>
-        <li>Place over medium heat, stirring constantly until the mixture begins to thicken and bubble (about 5–7 minutes).</li>
-        <li>In a small bowl, lightly beat the egg yolks. Slowly pour in about ½ cup of the hot mixture while whisking to avoid scrambling. Then, return the egg mixture back into the saucepan.</li>
-        <li>Continue to cook for 2–3 minutes, stirring, until thick and creamy. Remove from heat and stir in butter and vanilla extract.</li>
-        <li>Pour pudding into a serving cup. Cover the surface with plastic wrap (to prevent a skin from forming) and chill at least 2 hours if serving cold—or keep warm for immediate serving.</li>
-        <li>Just before serving, top your pudding cup with a scoop of ice cream. Garnish with your favorite toppings for extra indulgence.</li>
-      </ol>
+      <div class="steps">
+        <h3>Steps</h3>
+        <ol style="font-family: 'Chococooky', monospace;">
+          <li>In a medium saucepan, whisk together sugar, cornstarch, and salt. Slowly add the milk and cream, whisking until smooth.</li>
+          <li>Place over medium heat, stirring constantly until the mixture begins to thicken and bubble (about 5–7 minutes).</li>
+          <li>In a small bowl, lightly beat the egg yolks. Slowly pour in about ½ cup of the hot mixture while whisking to avoid scrambling. Then, return the egg mixture back into the saucepan.</li>
+          <li>Continue to cook for 2–3 minutes, stirring, until thick and creamy. Remove from heat and stir in butter and vanilla extract.</li>
+          <li>Pour pudding into a serving cup. Cover the surface with plastic wrap (to prevent a skin from forming) and chill at least 2 hours if serving cold—or keep warm for immediate serving.</li>
+          <li>Just before serving, top your pudding cup with a scoop of ice cream. Garnish with your favorite toppings for extra indulgence.</li>
+        </ol>
+      </div>
     </section>
   </main>
   <footer>
-    <p style="font-family: 'Chococooky', monospace;">&copy; 2025, Charleen Hernandez</p>
-    <p style="font-family: 'Chococooky', monospace;">This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    <div class-="foot">
+      <p style="font-family: 'Chococooky', monospace;">&copy; 2025, Charleen Hernandez</p>
+      <p style="font-family: 'Chococooky', monospace;">This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    </div>
   </footer>
 </wrapper>
 </body>
