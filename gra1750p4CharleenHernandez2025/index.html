@@ -10,6 +10,12 @@
     font-weight: normal;
     font-style: normal;
 }
+	@font-face {
+    font-family: 'Olivera Demo';
+    src: url('Olivera_Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     background-image: url("back.gif");
     background-size: cover;
@@ -18,14 +24,35 @@ wrapper {
     margin: auto;
     display: block;
     width: 800px;
-    border: 10px double #591C21;
+    border: 10px double #D00000;
     position: relative;
-    background-color: aliceblue;
+    background-color: rgba(240,248,255,0.9);
+    box-shadow: 0 0 100px rgba(225,0,3,0.8);
+    animation: borderGlow 3s ease-in-out infinite alternate;
 }
-h3 {
+
+@keyframes borderGlow {
+    0% {
+        box-shadow:
+            0 0 50px rgba(225,0,3,0.6),
+            0 0 100px rgba(225,0,3,0.4);
+    }
+	50% {
+        box-shadow:
+            0 0 50px rgba(252, 245, 95,0.6),
+            0 0 100px rgba(252, 245, 95, 0.4);
+    }
+    100% {
+        box-shadow:
+            0 0 50px rgba(0, 217, 100,0.6),
+            0 0 100px rgba(0, 217, 100,0.4);
+    }
+}
+h3, h4{
     margin: 50px;
     text-align: center;
-    color: rgba(225,0,3,1.00)
+    color: rgba(225,0,3,1.00);
+	font-family: 'Olivera Demo', cursive;
 }
 h1, h2 {
     margin: 40px;
@@ -33,37 +60,87 @@ h1, h2 {
     font-family: 'Magnolia Script', cursive;
 }
 h1 {
-    font-size: 80px;
+    font-size: 110px;
     color: rgba(225,0,3,1.00);
     -webkit-text-stroke: 0.3px #591C21;
+    text-shadow: 0 0 20px rgba(225,0,3,0.8);
+    animation: glowShift 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowShift {
+    0% {
+        text-shadow:
+            0 0 10px rgba(225,0,3,0.9),
+            0 0 20px rgba(225,0,3,0.8),
+            0 0 30px rgba(255,100,100,0.6);
+    }
+	    100% {
+        text-shadow:
+            0 0 10px rgba(225,0,3,0.5),
+            0 0 20px rgba(225,0,3,0.3),
+            0 0 30px rgba(255,100,100,0.05);
+	}
 }
 h2 {
-    font-size: 45px;
+    font-size: 55px;
     color: white;
     -webkit-text-stroke: 0.3px rgba(225,0,3,1.00);
 }
+	h3 {
+		margin: 25px;
+		font-size: 30px;
+		color: #AC000E;
+	}
+	h4 {
+		margin: 25px;
+		font-size: 25px;
+	}
 p {
     margin: 50px;
 }
+.cartoon {
+		display: block;
+		text-align: center;
+		margin: -50px 0 0 -50px;
+	}
 footer {
-    color: red;
+    color: rgba(225,0,3,1.00);
+	text-align: center;
     margin: 20px auto;
 	width: 800px;
-	border: 10px double #591C21;
-	background-color: aliceblue;
+	border: 10px double #D00000;
+	background-color: rgba(240,248,255,0.75);
+	font-family: 'Olivera Demo', cursive;
 }
 </style>
 </head>
 <body>
 <wrapper>
+	<header>
     <h2>Join us to celebrate...</h2>
     <h1>Vhien's</h1>
     <h2>Winter Birthday Party!</h2>
+</header>
+<main>
+	<div class="cartoon">
+	<img src="snowman.webp" alt="snowman gif" height="300px" width="250px"/>
+	</div>
+	<section>
+	<h4>Warm up this winter with good food, laughter, and cozy vibes as we celebrate a special day! Join us at Jongro BBQ for an evening filled with delicious dishes, cheerful company, and festive sparkle. Let’s make this winter night one to remember!</h4>
+	</section>
+	<section>
     <h3>December 17th <br>
       6:00 p.m.</h3>
     <h3>Jongro BBQ <br>
       22 W 32nd St 2nd floor <br>
       New York City, New York </h3>
+	</section>
+	<section>
+	<h4>RSVP by December 15th — we can’t wait to celebrate with you! <br>
+	(786)-123-4567
+	</h4>
+	</section>
+</main>
 </wrapper>
 <footer>
   <p> © Charleen Hernandez, 2025.</p>
