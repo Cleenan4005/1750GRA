@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nothing Bundt Cakes | Charleen Hernandez, 2025</title>
+<style>
+@font-face {
+    font-family: "JosefinSans SemiBold";
+    src: url("JosefinSans-SemiBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url('')
+}
+wrapper {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    background-color: #FFF4D7;
+}
+.top {
+    background-color: #9bb2dd;
+    text-align: center;
+    font-family: "JosefinSans SemiBold";
+    color: white;
+    padding: 10px;
+}
+a {
+    color: white;
+}
+.banner {
+    border-bottom: medium double #3566ab;
+}
+.logo {
+    display: block;
+    text-align: center;
+}
+nav {
+    background-color: #9bb2dd;
+    font-family: "JosefinSans SemiBold";
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 2em auto;
+  height: 150px; 
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.carousel::-webkit-scrollbar {
+display: none;
+}
+.card {
+    flex: 0 0 8em;
+    height: 10em;
+    background-color: white;
+    padding: 2em;
+    border-radius: .5em;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	font-family: "JosefinSans SemiBold";
+}
+.scroll-btn {
+  position: absolute;
+  top:70%;	
+  background-color: #9bb2dd;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+.scroll-btn:hover {
+    background-color: #3566ab;
+    opacity: 1;
+}
+.scroll-btn.left {
+    left: 590px;
+}
+.scroll-btn.right {
+    right: 590px;
+}
+footer {
+    font-family: "JosefinSans SemiBold";
+    color: #5a471b;
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <header>
+    <div class="top"> <span> Now delivering! The quickest and easiest way to satify your cake cravings! <a href="https://www.nothingbundtcakes.com/all-products/?data-id=20250902_Homepage_GlobalBanner&data-name=OrderNow&data-creative=none&data-position=Homepage_GlobalBanner"> ORDER NOW! </a> </span> </div>
+    <div class="banner"> <img src="banner.jpg" alt="an assortment of bundt cakes" width="700px"> </div>
+    <div class="logo"> <img src="logo.webp" alt="the logo of the website" height="100px"/> </div>
+    <nav>
+      <ul>
+        <li> <a href="https://www.nothingbundtcakes.com/cakes/"> Cakes </a> </li>
+        <li> <a href="https://www.nothingbundtcakes.com/flavors/"> Flavors </a> </li>
+        <li> <a href="https://www.nothingbundtcakes.com/occasions/"> Occaisions </a> </li>
+        <li> <a href="https://www.nothingbundtcakes.com/party-supplies/"> Party Supplies </a> </li>
+        <li> <a href="https://www.nothingbundtcakes.com/catering/"> Catering </a> </li>
+        <li> <a href="https://www.nothingbundtcakes.com/fundraising/"> Fundraising </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container" >
+    <button class="scroll-btn left" id="scroll-left">&#8249;</button>
+    <div class="carousel" id="carousel">
+      <div class="card">
+		  <img src="pumpkin.jpg" alt="pumpkin bundt"> 
+        <h3>card1</h3>
+      </div>
+      <div class="card">
+		  <img src="velvet.webp" alt="red velvet bundt"> 
+        <h3>card2</h3>
+      </div>
+      <div class="card">
+		  <img src="choco.webp" alt="chocolate bundt"> 
+        <h3>card3</h3>
+      </div>
+      <div class="card">
+        <h3>card4</h3>
+      </div>
+      <div class="card">
+        <h3>card5</h3>
+      </div>
+      <div class="card">
+        <h3>card6</h3>
+      </div>
+      <div class="card">
+        <h3>card7</h3>
+      </div>
+      <div class="card">
+        <h3>card8</h3>
+      </div>
+		  <div class="card">
+        <h3>card9</h3>
+      </div>
+    </div>
+    <button class="scroll-btn right" id="scroll-right">&#8250;</button>
+  </div>
+  <script>
+const carousel = document.getElementById('carousel');
+const scrollLeft = document.getElementById('scroll-left');
+const scrollRight = document.getElementById('scroll-right');
+
+scrollLeft.addEventListener('click', () => {
+  carousel.scrollBy({ left: -800, behavior: 'smooth' });
+});
+
+scrollRight.addEventListener('click', () => {
+  carousel.scrollBy({ left: 800, behavior: 'smooth' });
+});
+</script> 
+</wrapper>
+</body>
+<footer>
+  <p>&copy; Charleen Hernandez, 2025.</p>
+  <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+</html>
