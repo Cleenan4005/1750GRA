@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Nothing Bundt Cakes | Charleen Hernandez, 2025</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 @font-face {
     font-family: "JosefinSans SemiBold";
@@ -11,7 +12,7 @@
     font-style: normal;
 }
 body {
-    background-image: url('')
+    background-color:aliceblue;
 }
 wrapper {
     width: 100%;
@@ -36,6 +37,8 @@ a {
 .logo {
     display: block;
     text-align: center;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 nav {
     background-color: #9bb2dd;
@@ -44,25 +47,43 @@ nav {
     position: relative;
     text-align: center;
 }
-li {
-    display: inline-block;
-}
+ul {
+		list-style-type: none;
+	}
 li a {
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
+	font-size: 25px;
 }
+.cakecaro {
+ position: relative; 
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: inline-block;
+  justify-content: center;
+  overflow: hidden;
+  height: 700px;
+}
+.cakes {
+  text-align: center;
+  align-content: center;
+  font-family: "JosefinSans SemiBold";
+}
+
 .carousel-container {
-  position: relative;
+  position: relative; 
   width: 100%;
   max-width: 700px;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
   margin: 2em auto;
-  height: 150px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  height: 200px;
 }
+
 .carousel {
   display: flex;
   gap: 1em;
@@ -70,22 +91,26 @@ li a {
   scroll-behavior: smooth;
 }
 .carousel::-webkit-scrollbar {
-display: none;
+  display: none;
 }
-.card {
-    flex: 0 0 8em;
-    height: 10em;
-    background-color: white;
-    padding: 2em;
-    border-radius: .5em;
-    text-align: center;
-    align-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	font-family: "JosefinSans SemiBold";
+
+.flavor {
+ position: relative; 
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 200px;
 }
+
+
 .scroll-btn {
   position: absolute;
-  top:70%;	
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #9bb2dd;
   border: none;
   color: white;
@@ -97,23 +122,34 @@ display: none;
   z-index: 10;
   transition: background-color 0.3s;
 }
+
 .scroll-btn:hover {
-    background-color: #3566ab;
-    opacity: 1;
+  background-color: #3566ab;
 }
+
 .scroll-btn.left {
-    left: 590px;
+  left: 0px;
 }
+
 .scroll-btn.right {
-    right: 590px;
+  right: 0px;
+}
+
+@media (max-width : 1209px ){
+  .scroll-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
 }
 footer {
     font-family: "JosefinSans SemiBold";
     color: #5a471b;
+	margin: 20px auto;
+	width: 700px;
 }
 </style>
 </head>
-
 <body>
 <wrapper>
   <header>
@@ -131,43 +167,46 @@ footer {
       </ul>
     </nav>
   </header>
-  <div class="container" >
-    <button class="scroll-btn left" id="scroll-left">&#8249;</button>
-    <div class="carousel" id="carousel">
-      <div class="card">
-		  <img src="pumpkin.jpg" alt="pumpkin bundt"> 
-        <h3>card1</h3>
-      </div>
-      <div class="card">
-		  <img src="velvet.webp" alt="red velvet bundt"> 
-        <h3>card2</h3>
-      </div>
-      <div class="card">
-		  <img src="choco.webp" alt="chocolate bundt"> 
-        <h3>card3</h3>
-      </div>
-      <div class="card">
-        <h3>card4</h3>
-      </div>
-      <div class="card">
-        <h3>card5</h3>
-      </div>
-      <div class="card">
-        <h3>card6</h3>
-      </div>
-      <div class="card">
-        <h3>card7</h3>
-      </div>
-      <div class="card">
-        <h3>card8</h3>
-      </div>
-		  <div class="card">
-        <h3>card9</h3>
-      </div>
+	<div class="cakecaro">
+    <div class="cakes">
+      <img src="bundt-big.webp" alt="big bundt cake" width="200" height="200"> 
+      <h3>Bundt Cakes</h3>
     </div>
-    <button class="scroll-btn right" id="scroll-right">&#8250;</button>
+    <div class="cakes">
+      <img src="bundtlet.webp" alt="bundtlet" width="200" height="200"> 
+      <h3>Bundtlets</h3>
+    </div>
+    <div class="cakes">
+      <img src="bundtini.webp" alt="bundtini" width="200" height="200"> 
+      <h3>Bundtinis</h3>
+    </div>
   </div>
-  <script>
+	
+  <div class="carousel-container">
+  <button class="scroll-btn left" id="scroll-left">&#8249;</button>
+	
+  <div class="flavor" id="carousel">
+    <div class="flavor">
+      <img src="pumpkin.jpg" alt="pumpkin bundt"> 
+      <h3>Pumpkin Spice</h3>
+    </div>
+    <div class="flavor">
+      <img src="velvet.webp" alt="red velvet bundt"> 
+      <h3>Red Velvet</h3>
+    </div>
+    <div class="flavor">
+      <img src="choco.webp" alt="chocolate bundt"> 
+      <h3>Chocolate Chip</h3>
+    </div>
+    <div class="card"><h3>Card 4</h3></div>
+    <div class="card"><h3>Card 5</h3></div>
+    <div class="card"><h3>Card 6</h3></div>
+  </div>
+
+  <button class="scroll-btn right" id="scroll-right">&#8250;</button>
+</div>
+
+<script>
 const carousel = document.getElementById('carousel');
 const scrollLeft = document.getElementById('scroll-left');
 const scrollRight = document.getElementById('scroll-right');
@@ -179,7 +218,7 @@ scrollLeft.addEventListener('click', () => {
 scrollRight.addEventListener('click', () => {
   carousel.scrollBy({ left: 800, behavior: 'smooth' });
 });
-</script> 
+</script>
 </wrapper>
 </body>
 <footer>
