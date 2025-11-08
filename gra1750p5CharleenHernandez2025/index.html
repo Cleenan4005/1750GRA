@@ -12,51 +12,60 @@
     font-style: normal;
 }
 body {
-	margin: 0;
-    background-color:aliceblue;
+    margin: 0;
+    background-color: aliceblue;
 }
 wrapper {
-width: 850px;
+    width: 850px;
     padding: 20px;
     display: block;
     margin: auto;
     background-color: #FFF4D7;
 }
 .top {
-background-color: rgba(155,178,221,1.00);
-	color: white;
-	font-family: "JosefinSans SemiBold";
-	font-size: 23px;
-	padding: 10px 0 10px 0;
-	text-align: center;
-	position: relative;
-	margin:-20px;
-	
+    background-color: rgba(155,178,221,1.00);
+    color: white;
+    font-family: "JosefinSans SemiBold";
+    font-size: 23px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    position: relative;
+    margin: -20px;
 }
 a {
     color: white;
 }
-.banner img{
+.banner img {
     display: inline-block;
-	margin-top: 20px;
-	margin-left: -20px;
-	width:890px;
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 890px;
     height: auto;
-	border-bottom: solid rgba(137,168,216,1.00);
-	border-width: 10px;
-	}
+    border-bottom: solid rgba(137,168,216,1.00);
+    border-width: 10px;
+}
 .logo {
     display: block;
     text-align: center;
-	margin-top: 40px;
-	margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
-	h1{
-		font-family: "JosefinSans SemiBold";
-		color: rgba(45,83,152,1.00);
-		text-align: center;
-		font-size: 40px
-	}
+h1 {
+    font-family: "JosefinSans SemiBold";
+    color: rgba(45,83,152,1.00);
+    text-align: center;
+    font-size: 50px
+}
+.logocon{
+	width:890px;
+	background-color: white;
+	border-radius:30px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: -20px;
+}
 nav {
     font-family: "JosefinSans SemiBold";
     font-size: 20px;
@@ -74,69 +83,117 @@ button {
     font-family: "JosefinSans SemiBold";
     border: none;
     border-radius: 50px;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 button:hover {
     background-color: white;
     color: rgba(155, 178, 221, 1);
+	font-size:33px;
+	transform: scale(1.03);
 }
+	button:active {
+		font-size:28px;
+		color: rgba(45,83,152,1.00);
+		transform: scale(0.98);
+	}
 .cakecaro {
- position: relative; 
-  width: 100%;
-	flex-grow: 1px;
-  background-color: white;
-  border-radius: 20px;
-  display: inline-block;
-  justify-content: center;
-  overflow: hidden;
-padding-top: -20px;
-  height: 850px;
+    position: relative;
+    width: 890px;
+    flex-grow: 1px;
+    background-color: white;
+	border: none;
+	border-radius: 30px;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+	margin-left: -20px;
+    padding-top: 20px;
 }
 .cakes {
-  text-align: center;
-  align-content: center;
-  font-family: "JosefinSans SemiBold";
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "JosefinSans SemiBold";
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.cake-item {
+    display: block;
+    text-decoration: none;
+    color: rgba(45,83,152,1.00);
+    width: 30%;
+    min-width: 200px;
+    margin: 0 5px;
+}
+.cakes img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
 }
 
+.cakes img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cakes img:active {
+    transform: scale(0.98); 
+}
+.cakecaro h2{
+		font-size: 40px;
+		font-family: "JosefinSans SemiBold";
+		color: rgba(45,83,152,1.00);
+	    text-align: center;
+	 margin-top: 20px;
+	margin-bottom: -20px;
+	}
+.cakes h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
 .carousel-container {
-  position: relative; 
-  width: 100%;
-  max-width: 700px;
-  margin: 2em auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 200px;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
 }
-
 .carousel {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 .carousel::-webkit-scrollbar {
-  display: none;
+display: none;
 }
-
 .flavor {
- position: relative; 
-  width: 100%;
-  max-width: 700px;
-  margin: 2em auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 200px;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
 }
-
 footer {
     font-family: "JosefinSans SemiBold";
     color: #5a471b;
-	margin: 20px auto;
-	width: 700px;
+    margin: 20px auto;
+    width: 700px;
 }
 </style>
 </head>
@@ -144,53 +201,65 @@ footer {
 <wrapper>
   <header>
     <div class="top"> <span> Now delivering! The quickest and easiest way to satify your cake cravings! <a href="https://www.nothingbundtcakes.com/all-products/?data-id=20250902_Homepage_GlobalBanner&data-name=OrderNow&data-creative=none&data-position=Homepage_GlobalBanner"> ORDER NOW! </a> </span> </div>
-	<div class="banner"> <img src="banner.jpg" alt="bundt cake banner" width="1000px"> </div>
+    <div class="banner"> <img src="banner.jpg" alt="bundt cake banner" width="1000px"> </div>
+	  <div class="logocon">
     <div class="logo"> <img src="logo.webp" alt="website logo" height="300px"/> </div>
-	  <h1>We Bring the Joy&reg; to any celebration</h1>
-    <nav>
-        <div class="cakebtn"> <a href="https://www.nothingbundtcakes.com/cakes/"> 
-			<button> Cakes </button> </a> </div>
-        <div class="flavbtn"> <a href="https://www.nothingbundtcakes.com/flavors/"> 
-			<button> Flavors </button> </a> </div>
-        <div class="occbtn"> <a href="https://www.nothingbundtcakes.com/occasions/"> 
-			<button> Occasions </button> </a> </div>
-        <div class="suppbtn"> <a href="https://www.nothingbundtcakes.com/party-supplies/"> 
-			<button> Party Supplies </button> </a> </div>
-        <div class="caterbtn"> <a href="https://www.nothingbundtcakes.com/catering/"> 
-			<button> Catering </button> </a> </div>
-        <div class="fundbtn"> <a href="https://www.nothingbundtcakes.com/fundraising/"> 
-			<button> Fundraising </button> </a> </div>
-    </nav>
+    <h1>We Bring the Joy&reg; to any celebration</h1></div>
   </header>
-	<div class="cakecaro">
-    <div class="cakes">
-      <img src="bundt-big.webp" alt="big bundt cake" width="200" height="200"> 
-      <h3>Bundt Cakes</h3>
-      <img src="bundtlet.webp" alt="bundtlet" width="200" height="200"> 
-      <h3>Bundtlets</h3>
-      <img src="bundtini.webp" alt="bundtini" width="200" height="200"> 
-      <h3>Bundtinis</h3>
-  </div>
-</div>
-  <div class="carousel-container">
-  <div class="flavor" id="carousel">
-    <div class="flavor">
-      <img src="pumpkin.jpg" alt="pumpkin bundt"> 
-      <h3>Pumpkin Spice</h3>
+  <main>
+    <nav>
+      <div class="cakebtn"> <a href="https://www.nothingbundtcakes.com/cakes/">
+        <button> Cakes </button>
+        </a> </div>
+      <div class="flavbtn"> <a href="https://www.nothingbundtcakes.com/flavors/">
+        <button> Flavors </button>
+        </a> </div>
+      <div class="occbtn"> <a href="https://www.nothingbundtcakes.com/occasions/">
+        <button> Occasions </button>
+        </a> </div>
+      <div class="suppbtn"> <a href="https://www.nothingbundtcakes.com/party-supplies/">
+        <button> Party Supplies </button>
+        </a> </div>
+      <div class="caterbtn"> <a href="https://www.nothingbundtcakes.com/catering/">
+        <button> Catering </button>
+        </a> </div>
+      <div class="fundbtn"> <a href="https://www.nothingbundtcakes.com/fundraising/">
+        <button> Fundraising </button>
+        </a> </div>
+    </nav>
+    <div class="cakecaro">
+		<h2> Shop All Cakes </h2>
+      <div class="cakes"> <a href= "https://www.nothingbundtcakes.com/cakes/bundt-cakes/?data-id=20251103_Homepage_BundtCakes&data-name=ShopBundtCakes&data-creative=251103_hp_categoryboxes_lemonbundt.jpg&data-position=BundtCake_1" class="cake-item"> <img src="bundt-big.webp" alt="big bundt cake">
+        <h3>Bundt Cakes</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/cakes/bundtlets/?data-id=20251103_Homepage_BundtCakes&data-name=ShopBundtlets&data-creative=251103_hp_categoryboxes_pmpbundtlet.jpg&data-position=BundtCake_2" class="cake-item"> <img src="bundtlet.webp" alt="bundtlet">
+        <h3>Bundtlets</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/cakes/bundtinis/?data-id=20251103_Homepage_Bundtinis&data-name=ShopBundtinis&data-creative=251103_hp_categoryboxes_bundtinis.jpg&data-position=BundtCake_3" class="cake-item"> <img src="bundtini.webp" alt="bundtini">
+        <h3>Bundtinis</h3>
+        </a> </div>
     </div>
-    <div class="flavor">
-      <img src="velvet.webp" alt="red velvet bundt"> 
-      <h3>Red Velvet</h3>
+    <div class="carousel-container">
+      <div class="flavor" id="carousel">
+        <div class="flavor"> <img src="pumpkin.jpg" alt="pumpkin bundt">
+          <h3>Pumpkin Spice</h3>
+        </div>
+        <div class="flavor"> <img src="velvet.webp" alt="red velvet bundt">
+          <h3>Red Velvet</h3>
+        </div>
+        <div class="flavor"> <img src="choco.webp" alt="chocolate bundt">
+          <h3>Chocolate Chip</h3>
+        </div>
+        <div class="card">
+          <h3>Card 4</h3>
+        </div>
+        <div class="card">
+          <h3>Card 5</h3>
+        </div>
+        <div class="card">
+          <h3>Card 6</h3>
+        </div>
+      </div>
     </div>
-    <div class="flavor">
-      <img src="choco.webp" alt="chocolate bundt"> 
-      <h3>Chocolate Chip</h3>
-    </div>
-    <div class="card"><h3>Card 4</h3></div>
-    <div class="card"><h3>Card 5</h3></div>
-    <div class="card"><h3>Card 6</h3></div>
-  </div>
-</div>
+  </main>
 </wrapper>
 </body>
 <footer>
