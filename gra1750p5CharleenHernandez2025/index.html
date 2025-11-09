@@ -57,14 +57,20 @@ h1 {
     font-size: 50px
 }
 .logocon {
-    width: 890px;
+    position: relative;
+    width: 850px; 
+    flex-grow: 1px;
     background-color: white;
+    border: none;
     border-radius: 30px;
-    padding-top: 5px;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
     padding-bottom: 5px;
-    margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: -20px;
+    margin-left: 0; 
+    padding-top: 20px;
 }
 nav {
     font-family: "JosefinSans SemiBold";
@@ -223,11 +229,35 @@ button:active {
     transform: scale(0.98);
 }
 footer {
+    background-color: rgba(45,83,152,1.00);
     font-family: "JosefinSans SemiBold";
-    color: #5a471b;
-    margin: 20px auto;
-    width: 700px;
+    color: white;
+    margin: auto;
+    width: 850px;
+    padding: 20px;
+    text-align: center; 
 }
+
+footer p {
+    text-align: left; 
+    margin: 10px 0;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 20px 10px;
+    vertical-align: middle;
+}
+	.social a{
+		text-decoration: none;
+	}
 </style>
 </head>
 <body>
@@ -312,6 +342,18 @@ footer {
 </wrapper>
 </body>
 <footer>
+<h3>Stay connected with us!</h3>
+    <div class="social">
+        <a href="https://www.facebook.com/nothingbundtcakes/">
+            <img src="facebook.webp" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/nothingbundtcakes/">
+            <img src="insta.webp" alt="instagram">
+        </a>
+        <a href="https://www.tiktok.com/@nothingbundtcakes">
+            <img src="tiktok.webp" alt="tiktok">
+        </a>
+    </div>
   <p>&copy; Charleen Hernandez, 2025.</p>
   <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
 </footer>
