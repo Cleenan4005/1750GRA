@@ -13,7 +13,7 @@
 }
 body {
     margin: 0;
-    background-color: aliceblue;
+    background-image: url("background.webp")
 }
 wrapper {
     width: 850px;
@@ -254,6 +254,14 @@ footer h3 {
     height: 40px;
     margin: 0 5px 20px 10px;
     vertical-align: middle;
+	transition: transform 0.3s ease-in-out;
+}
+.social img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.social img:active {
+    transform: scale(0.98);
 }
 	.social a{
 		text-decoration: none;
