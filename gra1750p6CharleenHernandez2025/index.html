@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nothing Bundt Cakes | Charleen Hernandez, 2025</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@font-face {
+    font-family: "JosefinSans SemiBold";
+    src: url("JosefinSans-SemiBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    background-image: url("background.webp")
+}
+wrapper {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: #FFF4D7;
+}
+.top {
+    background-color: rgba(155,178,221,1.00);
+    color: white;
+    font-family: "JosefinSans SemiBold";
+    font-size: 20px;
+    padding: 5px 0 10px 0;
+    text-align: center;
+    position: relative;
+    margin:0px;
+}
+a {
+    color: white;
+}
+.banner img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    border-bottom: solid rgba(137,168,216,1.00);
+    border-width: 10px;
+}
+.logo {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 70px;
+	margin-left: 100px;
+}
+h1 {
+    font-family: "JosefinSans SemiBold";
+    color: rgba(45,83,152,1.00);
+    text-align: center;
+    font-size: 30px;
+	text-align: right;
+   margin-right: 25px;
+	margin-top: -150px;
+    margin-bottom: 50px;
+}
+.logocon {
+    position: relative;
+    width: 100%;
+    margin: -5px 0 20px 0;
+    background-color: white;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+}
+nav {
+    font-family: "JosefinSans SemiBold";
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(155,178,221,1.00);
+	width: 1100px;
+	 margin: -30px -20px 20px 0px;
+}
+ul {
+    list-style-type: none;
+    padding: 10px 30px 10px 30px;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul a {
+    text-decoration: none;
+}
+li {
+    display: inline-block;
+    margin: 10px 8px 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    color: white;
+    white-space: nowrap;
+}
+li:hover {
+    background-color: white;
+    color: rgba(155, 178, 221, 1);
+    transform: scale(1.1);
+    border-radius: 10px;
+    cursor: pointer;
+	}
+li:active {
+color: rgba(45,83,152,1.00);
+transform: scale(0.95);
+border-radius: 10px;
+}
+.cakecon {
+    position: relative;
+    width: 1000px;
+    flex-grow: 1px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    padding-top: 20px;
+}
+.cakes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "JosefinSans SemiBold";
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.cake-item {
+    display: block;
+    text-decoration: none;
+    color: rgba(45,83,152,1.00);
+    width: 30%;
+    min-width: 200px;
+    margin: 0 5px;
+}
+.cakes img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.cakes img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cakes img:active {
+    transform: scale(0.98);
+}
+.cakecon h2 {
+    font-size: 40px;
+    font-family: "JosefinSans SemiBold";
+    color: rgba(45,83,152,1.00);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.cakes h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.flavorcon {
+    position: relative;
+    width: 850px;
+    flex-grow: 1px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    padding-top: 20px;
+}
+.flavor1, .flavor2, .flavor3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    font-family: "JosefinSans SemiBold";
+    margin-top: 40px;
+    padding: 10px 40px;
+}
+.flavorcon h2 {
+    font-size: 40px;
+    font-family: "JosefinSans SemiBold";
+    color: rgba(45,83,152,1.00);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.flavorcon h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.flavor-item {
+    margin: 0;
+    width: calc(33.333% - 7px);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-decoration: none;
+    color: rgba(45,83,152,1.00);
+}
+.flavor-item img {
+    border-radius: 20px;
+    width: 180px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.flavor-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.flavor-item img:active {
+    transform: scale(0.98);
+}
+footer {
+    background-color: rgba(45,83,152,1.00);
+    font-family: "JosefinSans SemiBold";
+    color: white;
+    margin: auto;
+    width: 850px;
+    padding: 20px;
+    text-align: center;
+}
+footer p {
+    text-align: left;
+    margin: 10px 0;
+}
+footer h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 20px 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+.social img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.social img:active {
+    transform: scale(0.98);
+}
+.social a {
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+<wrapper>
+  <header>
+    <div class="top"> <span> Now delivering! The quickest and easiest way to satify your cake cravings! <a href="https://www.nothingbundtcakes.com/all-products/?data-id=20250902_Homepage_GlobalBanner&data-name=OrderNow&data-creative=none&data-position=Homepage_GlobalBanner"> ORDER NOW! </a> </span> </div>
+	    <div class="logocon">
+      <div class="logo"> <img src="logo.webp" alt="website logo" height="100px"/> </div>
+      <h1>We Bring the Joy&reg; to any celebration</h1>
+    </div>
+    <div class="banner">
+                    <img src="banner.jpg" alt="bundt cake banner">
+	  </div>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <a href="https://www.nothingbundtcakes.com/cakes/">
+        <li> Cakes </li>
+        </a> <a href="https://www.nothingbundtcakes.com/flavors/">
+        <li> Flavors </li>
+        </a> <a href="https://www.nothingbundtcakes.com/occasions/">
+        <li> Occasions </li>
+        </a> <a href="https://www.nothingbundtcakes.com/party-supplies/">
+        <li> Party Supplies </li>
+        </a> <a href="https://www.nothingbundtcakes.com/catering/">
+        <li> Catering </li>
+        </a> <a href="https://www.nothingbundtcakes.com/fundraising/">
+        <li> Fundraising </li>
+        </a>
+      </ul>
+    </nav>
+    <div class="cakecon">
+      <h2> Shop All Cakes </h2>
+      <div class="cakes"> <a href= "https://www.nothingbundtcakes.com/cakes/bundt-cakes/?data-id=20251103_Homepage_BundtCakes&data-name=ShopBundtCakes&data-creative=251103_hp_categoryboxes_lemonbundt.jpg&data-position=BundtCake_1" class="cake-item"> <img src="bundt-big.webp" alt="big bundt cake">
+        <h3>Bundt Cakes</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/cakes/bundtlets/?data-id=20251103_Homepage_BundtCakes&data-name=ShopBundtlets&data-creative=251103_hp_categoryboxes_pmpbundtlet.jpg&data-position=BundtCake_2" class="cake-item"> <img src="bundtlet.webp" alt="bundtlet">
+        <h3>Bundtlets</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/cakes/bundtinis/?data-id=20251103_Homepage_Bundtinis&data-name=ShopBundtinis&data-creative=251103_hp_categoryboxes_bundtinis.jpg&data-position=BundtCake_3" class="cake-item"> <img src="bundtini.webp" alt="bundtini">
+        <h3>Bundtinis</h3>
+        </a> </div>
+    </div>
+    <div class="flavorcon">
+      <h2>Nothing BUNDT Flavors</h2>
+      <div class="flavor1"> <a href= "https://www.nothingbundtcakes.com/flavors/pumpkin-spice/?data-id=20251020_Flavors_Carousel&data-name=PMP&data-creative=flavors_pmp_160x160.jpg&data-position=Flavors_Slide2" class="flavor-item"> <img src="pumpkin.jpg" alt="pumpkin bundt">
+        <h3>Pumpkin Spice</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/red-velvet/?data-id=20251020_Flavors_Carousel&data-name=RED&data-creative=flavors_red_slice_160x160.jpg&data-position=Flavors_Slide3" class="flavor-item"> <img src="velvet.webp" alt="red velvet bundt">
+        <h3>Red Velvet</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/chocolate-chocolate-chip/?data-id=20251020_Flavors_Carousel&data-name=CCC&data-creative=flavors_ccc_slice_160x160.jpg&data-position=Flavors_Slide4" class="flavor-item"> <img src="choco.webp" alt="chocolate bundt">
+        <h3>Chocolate Chip</h3>
+        </a> </div>
+      <div class="flavor2"> <a href= "https://www.nothingbundtcakes.com/flavors/white-chocolate-raspberry/?data-id=20251020_Flavors_Carousel&data-name=WCR&data-creative=flavors_wcr_slice_160x160.jpg&data-position=Flavors_Slide5" class="flavor-item"> <img src="rasp.webp" alt="raspberry bundt">
+        <h3>White Chocolate Raspberry</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/confetti/?data-id=20251013_Homepage_Flavors&data-name=CON&data-creative=flavors_con_slice_160x160.jpg&data-position=Flavors_Slide6" class="flavor-item"> <img src="confetti.webp" alt="confetti bundt">
+        <h3>Confetti</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/lemon/?data-id=20251020_Flavors_Carousel&data-name=LEM&data-creative=flavors_lem_slice_160x160.jpg&data-position=Flavors_Slide7" class="flavor-item"> <img src="lemon.webp" alt="lemon bundt">
+        <h3>Lemon</h3>
+        </a> </div>
+      <div class="flavor3"> <a href= "https://www.nothingbundtcakes.com/flavors/oreo-cookies-and-cream/?data-id=20251020_Flavors_Carousel&data-name=ORO&data-creative=flavors_oro_slice_160x160.jpg&data-position=Flavors_Slide9" class="flavor-item"> <img src="oreo.webp" alt="oreo bundt">
+        <h3>Cookies &amp; Cream</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/classic-vanilla/?data-id=20251020_Flavors_Carousel&data-name=VAN&data-creative=flavors_van_slice_160x160.jpg&data-position=Flavors_Slide10" class="flavor-item"> <img src="vanilla.webp" alt="vanilla bundt">
+        <h3>Classic Vanilla</h3>
+        </a> <a href= "https://www.nothingbundtcakes.com/flavors/carrot/?data-id=20251020_Flavors_Carousel&data-name=CAR&data-creative=flavors_car_slice_160x160.jpg&data-position=Flavors_Slide11" class="flavor-item"> <img src="carrot.webp" alt="carrot bundt">
+        <h3>Carrot</h3>
+        </a> </div>
+    </div>
+  </main>
+</wrapper>
+</body>
+<footer>
+  <h3>Stay connected with us!</h3>
+  <div class="social"><a href="https://www.facebook.com/nothingbundtcakes/"><img src="facebook.webp" alt="facebook"></a><a href="https://www.instagram.com/nothingbundtcakes/"><img src="insta.webp" alt="instagram"></a><a href="https://www.tiktok.com/@nothingbundtcakes"><img src="tiktok.webp" alt="tiktok"></a></div>
+  <p>&copy; Charleen Hernandez, 2025.</p>
+  <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+</html>
