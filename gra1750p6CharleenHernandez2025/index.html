@@ -13,7 +13,6 @@
 }
 body {
     margin: 0;
-    background-image: url("background.webp")
 }
 wrapper {
     width: 100%;
@@ -29,34 +28,41 @@ wrapper {
     padding: 5px 0 10px 0;
     text-align: center;
     position: relative;
-    margin:0px;
+    margin: 0px;
 }
 a {
     color: white;
 }
+.banner {
+    background-image: url("background.webp");
+    width: 100%;
+	margin-top: -20px;
+}
+.bancon {
+    max-width: 1200px;
+    margin: 20px auto;
+}
 .banner img {
     display: block;
-    margin: 20px auto;
-    width: 80%;
+    width: 100%;
     height: auto;
-    border-bottom: solid rgba(137,168,216,1.00);
-    border-width: 10px;
+    margin: 0;
 }
 .logo {
     display: block;
     text-align: left;
     margin-top: 20px;
     margin-bottom: 70px;
-	margin-left: 100px;
+    margin-left: 100px;
 }
 h1 {
     font-family: "JosefinSans SemiBold";
     color: rgba(45,83,152,1.00);
     text-align: center;
     font-size: 30px;
-	text-align: right;
-   margin-right: 25px;
-	margin-top: -150px;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: -150px;
     margin-bottom: 50px;
 }
 .logocon {
@@ -67,22 +73,26 @@ h1 {
     display: block;
     justify-content: center;
     overflow: hidden;
+    border-bottom: solid rgba(137,168,216,1.00);
+    border-width: 10px;
 }
 nav {
     font-family: "JosefinSans SemiBold";
-    font-size: 25px;
+    display: block;
+    font-size: 30px;
     text-align: center;
     background-color: rgba(155,178,221,1.00);
-	width: 1100px;
-	 margin: -30px -20px 20px 0px;
+    width: 100%;
+    margin: -30px 0 20px 0;
 }
 ul {
     list-style-type: none;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 0;
     white-space: nowrap;
     overflow-x: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 55px;
 }
 ul a {
     text-decoration: none;
@@ -102,15 +112,15 @@ li:hover {
     transform: scale(1.1);
     border-radius: 10px;
     cursor: pointer;
-	}
+}
 li:active {
-color: rgba(45,83,152,1.00);
-transform: scale(0.95);
-border-radius: 10px;
+    color: rgba(45,83,152,1.00);
+    transform: scale(0.95);
+    border-radius: 10px;
 }
 .cakecon {
     position: relative;
-    width: 1000px;
+    width: 1400px;
     flex-grow: 1px;
     background-color: white;
     border: none;
@@ -118,11 +128,9 @@ border-radius: 10px;
     display: block;
     justify-content: center;
     overflow: hidden;
-    margin-top: 20px;
-    padding-bottom: 5px;
-    margin-bottom: 50px;
-    margin-left: 0;
+    margin: 20px auto 50px auto;
     padding-top: 20px;
+    padding-bottom: 5px;
 }
 .cakes {
     display: flex;
@@ -137,7 +145,7 @@ border-radius: 10px;
     text-decoration: none;
     color: rgba(45,83,152,1.00);
     width: 30%;
-    min-width: 200px;
+    min-width: 150px;
     margin: 0 5px;
 }
 .cakes img {
@@ -177,11 +185,9 @@ border-radius: 10px;
     display: block;
     justify-content: center;
     overflow: hidden;
-    margin-top: 20px;
-    padding-bottom: 5px;
-    margin-bottom: 50px;
-    margin-left: 0;
+    margin: 20px auto 50px auto;
     padding-top: 20px;
+    padding-bottom: 5px;
 }
 .flavor1, .flavor2, .flavor3 {
     display: flex;
@@ -270,13 +276,13 @@ footer h3 {
 <wrapper>
   <header>
     <div class="top"> <span> Now delivering! The quickest and easiest way to satify your cake cravings! <a href="https://www.nothingbundtcakes.com/all-products/?data-id=20250902_Homepage_GlobalBanner&data-name=OrderNow&data-creative=none&data-position=Homepage_GlobalBanner"> ORDER NOW! </a> </span> </div>
-	    <div class="logocon">
+    <div class="logocon">
       <div class="logo"> <img src="logo.webp" alt="website logo" height="100px"/> </div>
       <h1>We Bring the Joy&reg; to any celebration</h1>
     </div>
     <div class="banner">
-                    <img src="banner.jpg" alt="bundt cake banner">
-	  </div>
+      <div class="bancon"> <img src="banner.jpg" alt="bundt cake banner"> </div>
+    </div>
   </header>
   <main>
     <nav>
