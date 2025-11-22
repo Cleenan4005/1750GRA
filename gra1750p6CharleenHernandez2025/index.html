@@ -13,12 +13,15 @@
 }
 body {
     margin: 0;
+	background-image: url("background.webp");
 }
+
 wrapper {
-    width: 100%;
+    width: 1200px; 
     display: block;
     margin: auto;
     background-color: #FFF4D7;
+    overflow: auto; 
 }
 .top {
     background-color: rgba(155,178,221,1.00);
@@ -34,7 +37,6 @@ a {
     color: white;
 }
 .banner {
-    background-image: url("background.webp");
     width: 100%;
 	margin-top: -20px;
 }
@@ -53,7 +55,7 @@ a {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 70px;
-    margin-left: 100px;
+    margin-left: 45px;
 }
 h1 {
     font-family: "JosefinSans SemiBold";
@@ -78,79 +80,84 @@ h1 {
 }
 nav {
     font-family: "JosefinSans SemiBold";
-    display: block;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgba(155,178,221,1.00);
-    width: 100%;
-    margin: -30px 0 20px 0;
-}
-ul {
-    list-style-type: none;
-    padding: 10px 0;
-    white-space: nowrap;
-    overflow-x: auto;
     display: flex;
-    justify-content: center;
-    gap: 55px;
+    position: relative;
+    width: 100%;
+    margin: -70px 0 20px 0;
+    justify-content: center; 
+    gap: 20px;
+    white-space: nowrap; 
+    overflow-x: auto;
+    padding: 10px 0;
+	background-color: white;
+	 border-bottom: solid rgba(137,168,216,1.00);
+	border-width: 10px;
 }
-ul a {
+.btn a {
     text-decoration: none;
+    display: block;
 }
-li {
-    display: inline-block;
-    margin: 10px 8px 15px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+
+button {
+    width: 180px;
+    height: 50px;
+    font-size: 27px;
+    margin: 20px 0 20px 0; 
+    padding: 10px 0;
+    background-color: #9bb2dd;
     color: white;
-    white-space: nowrap;
-}
-li:hover {
-    background-color: white;
-    color: rgba(155, 178, 221, 1);
-    transform: scale(1.1);
-    border-radius: 10px;
+    font-family: "JosefinSans SemiBold";
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
     cursor: pointer;
 }
-li:active {
-    color: rgba(45,83,152,1.00);
-    transform: scale(0.95);
-    border-radius: 10px;
+button:hover {
+    background-color: #2D5398;
+    color: white;
+    font-size: 28px;
+    transform: scale(1.02);
 }
+button:active {
+    font-size: 28px;
+    color: #9bb2dd;
+    transform: scale(0.98);
+}
+
 .cakecon {
     position: relative;
-    width: 1400px;
-    flex-grow: 1px;
+    width: 900px; 
     background-color: white;
     border: none;
     border-radius: 30px;
     display: block;
     justify-content: center;
     overflow: hidden;
-    margin: 20px auto 50px auto;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    margin: 20px auto 50px auto; 
+    padding-top: 5px;
+    padding-bottom: 0;
 }
 .cakes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly; 
     text-align: center;
     font-family: "JosefinSans SemiBold";
-    margin-top: 50px;
-    padding: 0 20px;
+    margin: 50px 50px 20px 50px;
+    padding: 0 10px;
+    gap: 20px; 
+    flex-wrap: nowrap;
 }
 .cake-item {
     display: block;
     text-decoration: none;
     color: rgba(45,83,152,1.00);
-    width: 30%;
+    width: 32%; 
     min-width: 150px;
-    margin: 0 5px;
+    margin: 10px 0; 
 }
 .cakes img {
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -175,28 +182,28 @@ li:active {
     margin-top: 10px;
     font-size: 30px;
 }
+
 .flavorcon {
     position: relative;
-    width: 850px;
-    flex-grow: 1px;
+    width: 95%; 
+    max-width: 900px; 
     background-color: white;
     border: none;
     border-radius: 30px;
     display: block;
     justify-content: center;
     overflow: hidden;
-    margin: 20px auto 50px auto;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    margin: 20px auto 50px auto; 
+    padding-bottom: 10px;
 }
 .flavor1, .flavor2, .flavor3 {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-evenly; 
+    gap: 15px;
     text-align: center;
     font-family: "JosefinSans SemiBold";
-    margin-top: 40px;
-    padding: 10px 40px;
+    margin-top: -20px;
+    padding: 10px 60px; 
 }
 .flavorcon h2 {
     font-size: 40px;
@@ -204,15 +211,16 @@ li:active {
     color: rgba(45,83,152,1.00);
     text-align: center;
     margin-top: 20px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
+	padding-top: 10px;
 }
 .flavorcon h3 {
     margin-top: 10px;
     font-size: 30px;
 }
 .flavor-item {
-    margin: 0;
-    width: calc(33.333% - 7px);
+    margin: 10px 0;
+    width:200px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -222,7 +230,7 @@ li:active {
 }
 .flavor-item img {
     border-radius: 20px;
-    width: 180px;
+    width: 100%; 
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -239,14 +247,15 @@ footer {
     background-color: rgba(45,83,152,1.00);
     font-family: "JosefinSans SemiBold";
     color: white;
-    margin: auto;
-    width: 850px;
-    padding: 20px;
+    margin: -5px auto;
+    width: 1200px;
     text-align: center;
+    padding: 20px 0; 
 }
 footer p {
     text-align: left;
-    margin: 10px 0;
+    margin: 10px 0; 
+    padding: 0 20px;
 }
 footer h3 {
     text-align: center;
@@ -285,22 +294,25 @@ footer h3 {
     </div>
   </header>
   <main>
-    <nav>
-      <ul>
-        <a href="https://www.nothingbundtcakes.com/cakes/">
-        <li> Cakes </li>
-        </a> <a href="https://www.nothingbundtcakes.com/flavors/">
-        <li> Flavors </li>
-        </a> <a href="https://www.nothingbundtcakes.com/occasions/">
-        <li> Occasions </li>
-        </a> <a href="https://www.nothingbundtcakes.com/party-supplies/">
-        <li> Party Supplies </li>
-        </a> <a href="https://www.nothingbundtcakes.com/catering/">
-        <li> Catering </li>
-        </a> <a href="https://www.nothingbundtcakes.com/fundraising/">
-        <li> Fundraising </li>
-        </a>
-      </ul>
+        <nav>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/cakes/">
+        <button> Cakes </button>
+        </a> </div>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/flavors/">
+        <button> Flavors </button>
+        </a> </div>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/occasions/">
+        <button> Occasions </button>
+        </a> </div>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/party-supplies/">
+        <button> Party Supplies </button>
+        </a> </div>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/catering/">
+        <button> Catering </button>
+        </a> </div>
+      <div class="btn"> <a href="https://www.nothingbundtcakes.com/fundraising/">
+        <button> Fundraising </button>
+        </a> </div>
     </nav>
     <div class="cakecon">
       <h2> Shop All Cakes </h2>
